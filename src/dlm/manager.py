@@ -64,7 +64,7 @@ class Manager:
             else:
                 try:
                     self._downloads.remove(download)
-                except ValueError e:
+                except ValueError:
                     removed = False
                 else:
                     download.status_changed_event.remove_listener(
